@@ -15,4 +15,4 @@ A simple, interactive web game that helps you memorize phone numbers digit-by-di
 - JavaScript
 
 ## 📦 Deployment
-Check out the live demo: [[https://your-site.onrender.com](https://your-site.onrender.com](https://phone-number-game.onrender.com))
+Check out the live demo: [https://phone-number-game.onrender.com](https://phone-number-game.onrender.com)
