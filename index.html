@@ -1,28 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FONO </title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FONO - Phone Number Game</title>
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-    <h1>Welcome to the phone number game</h1>
+  <div class="container">
+    <h1>Phone Number Game</h1>
 
-    <div>
-        <label>Enter the phone number you want to learn</label>
-        <input type="text">
-        <button>Start the game!</button>
+    <div id="start-section" class="card">
+      <label for="phoneInput">Enter the phone number you want to learn:</label>
+      <input type="text" id="phoneInput" placeholder="e.g. 9876543210"/>
+      <button id="startBtn">Start the Game!</button>
     </div>
 
-    <div>
-        <label>Enter the first digit</label>
-        <input type="text">
-        <button>Submit</button>
+    <div id="game-section" class="card" style="display: none;">
+      <p>Enter the first <span id="step-count">1</span> digit(s):</p>
 
-        <p></p>
+      <input type="text" id="digitInput" placeholder="Type digits or use dialer" maxlength="15" />
 
-        <!--The answer and the congratulations text 
-        will be put in from the javascript-->
+      <div class="dialer">
+        <button class="digit-btn">1</button>
+        <button class="digit-btn">2</button>
+        <button class="digit-btn">3</button>
+        <button class="digit-btn">4</button>
+        <button class="digit-btn">5</button>
+        <button class="digit-btn">6</button>
+        <button class="digit-btn">7</button>
+        <button class="digit-btn">8</button>
+        <button class="digit-btn">9</button>
+        <button class="digit-btn">0</button>
+        <button id="clearBtn">Clear</button>
+        <button id="submitBtn">Submit</button>
+      </div>
+
+      <p id="feedback"></p>
     </div>
+
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
